@@ -40,6 +40,7 @@ body {
 .right {
     background: #fff;
     background-image: linear-gradient(to top, #fff 0%, #ececec 100%);
+    padding: 0px;
 }
 
 textarea {
