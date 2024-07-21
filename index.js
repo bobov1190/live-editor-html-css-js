@@ -1,16 +1,8 @@
 function run() {
-  let htmlCode = document.getElementById("html-code").value;
-  let cssCode = document.getElementById("css-code").value;
-  let jsCode = document.getElementById("js-code").value;
+  const htmlCode = document.getElementById("html-code").value;
+  const cssCode = `<style>${document.getElementById("css-code").value}</style>`;
+  const jsCode = `<script>${document.getElementById("js-code").value}</script>`;
 
-  let output = document.getElementById("output");
-
-  output.contentDocument.body.innerHTML =
-    htmlCode +
-    "<style>" +
-    cssCode +
-    "</style>" +
-    "<script>" +
-    jsCode +
-    "</script>";
+  const output = document.getElementById("output").contentDocument.body;
+  output.innerHTML = htmlCode + cssCode + jsCode;
 }
