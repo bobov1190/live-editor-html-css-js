@@ -43,8 +43,7 @@ body {
     background-image: linear-gradient(to top, #fff 0%, #ececec 100%);
 }
 
-textarea,
-iframe {
+textarea {
     width: 100%;
     height: 100%;
     border: 0;
@@ -54,6 +53,19 @@ iframe {
     border-radius: 5px;
     background: rgba(230, 230, 230, 0.1);
     color: #fff;
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    resize: none;
+    border-radius: 5px;
+    background: rgba(230, 230, 230, 0.1);
+    color: #333;
     padding: 20px;
 }
 
